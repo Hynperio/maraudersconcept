@@ -1,180 +1,159 @@
-/*General*/
-body{
+/* General */
+body {
     background-color: #0A0A09;
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
 }
 
-.menu_txt{
+.menu_txt {
     font-family: 'MedievalSharp', cursive;
     font-size: 26px;
     color: white;
 }
 
-.logo{
+.logo {
     width: 70px;
 }
 
-.img{
-    width: 100%;
+.img {
+    width: 50%;
 }
 
-.credits{
+.credits {
     font-family: 'MedievalSharp', cursive;
     color: white;
     font-size: 18px;
 }
 
-.social_media{
+.social_media {
     width: 25px;
 }
 
-/*Index Style*/
-.title_marauders{
+/* Index Style */
+.title_marauders {
     font-family: 'Press Start 2P', sans-serif;
     font-size: 60px;
     color: white;
 }
 
-.goal_txt{
+.goal_txt {
     font-family: 'Roboto', sans-serif;
     color: white;
     text-align: justify;
+    font-size: 18px;
 }
 
 #pfp {
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add smooth transitions for opacity and transform */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    opacity: 1; /* Set initial opacity */
+    transform: scale(1);
 }
 
 .hovered {
-    opacity: 0; /* Make the image transparent on hover */
-    transform: scale(1); /* Slightly scale up the image on hover */
+    opacity: 0;
+    transform: scale(1.05); /* Slightly larger scaling for hover */
 }
 
-
-/*About Style*/
-.about_title{
+/* About Style */
+.about_title,
+.about_title2,
+.about_title3 {
     font-family: 'VT323', monospace;
     font-size: 60px;
     color: white;
 }
 
-.about_title2{
-    font-family: 'VT323', monospace;
-    font-size: 60px;
-    color: #008000;
+.about_title2 {
+    color: #008000; /* Apply color directly to the class */
 }
 
-.about_title3{
-    font-family: 'VT323', monospace;
-    font-size: 60px;
-    color: #FFD700;
+.about_title3 {
+    color: #FFD700; /* Apply color directly to the class */
 }
 
-.about_text{
+.about_text {
     color: #D1CDCD;
     text-align: justify;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
 
+/* Media Queries */
+@media (min-width: 360px) {
+    /* Adjustments for Mobile */
+    .img {
+        width: 70%;
+    }
 
+    .title_marauders {
+        font-size: 30px;
+    }
 
+    .goal_txt {
+        font-size: 14px;
+    }
+}
 
-/* Mobile Breakpoint */
-@media (min-width: 576px) {
-
-    /*Index Style*/
-    .img{
+@media (min-width: 540px) {
+    /* Adjustments for Mobile */
+    .img {
         width: 50%;
     }
 
-    .title_marauders{
-        font-family: 'Press Start 2P', sans-serif;
-        font-size: 30PX;
-        color: white;
+    .title_marauders {
+        font-size: 30px;
     }
 
-    .goal_txt{
-        font-family: 'Roboto', sans-serif;
-        color: white;
+    .goal_txt {
         font-size: 14px;
-        text-align: justify;
     }
-
-
 }
 
-/* Tablet Breakpoint */
 @media (min-width: 768px) {
-
-    /*Index Style*/
-    .img{
+    /* Adjustments for Tablet */
+    .img {
         width: 65%;
     }
 
-    .title_marauders{
-        font-family: 'Press Start 2P', sans-serif;
-        font-size: 32PX;
-        color: white;
+    .title_marauders {
+        font-size: 32px;
     }
 
-    .goal_txt{
-        font-family: 'Roboto', sans-serif;
-        color: white;
+    .goal_txt {
         font-size: 18px;
-        text-align: justify;
     }
 }
 
-/* Desktop Breakpoint */
-@media (min-width: 992px) { 
-
-    /*Index Style*/
-    .img{
-        width: 60%;
+@media (min-width: 992px) {
+    /* Adjustments for Desktop */
+    .img {
+        width: 40%;
     }
 
-    .goal_txt{
-        font-family: 'Roboto', sans-serif;
-        color: white;
+    .goal_txt {
         font-size: 25px;
-        text-align: justify;
     }
- }
+}
 
-
- @media (min-width: 1200px) { 
-
-    /*Index Style*/
+@media (min-width: 1200px) {
+    /* Adjustments for Larger Desktop */
     .img {
         width: 655px;
         height: 834px;
-    } 
-
-    .goal_txt{
-        font-family: 'Roboto', sans-serif;
-        color: white;
-        font-size: 25px;
-        text-align: justify;
     }
- }
+}
 
- @media (min-width: 2000px) { 
-
-    /*Index Style*/
+@media (min-width: 2000px) {
+    /* Further adjustments for Large Screens */
     .img {
         width: 30%;
-    } 
-
-    .title_marauders{
-        font-family: 'Press Start 2P', sans-serif;
-        font-size: 40PX;
-        color: white;
     }
 
-    .goal_txt{
-        font-family: 'Roboto', sans-serif;
-        color: white;
+    .title_marauders {
+        font-size: 40px;
+    }
+
+    .goal_txt {
         font-size: 36px;
-        text-align: justify;
     }
- }
+}
