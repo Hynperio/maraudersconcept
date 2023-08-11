@@ -1,0 +1,180 @@
+/*General*/
+body{
+    background-color: #0A0A09;
+}
+
+.menu_txt{
+    font-family: 'MedievalSharp', cursive;
+    font-size: 26px;
+    color: white;
+}
+
+.logo{
+    width: 70px;
+}
+
+.img{
+    width: 100%;
+}
+
+.credits{
+    font-family: 'MedievalSharp', cursive;
+    color: white;
+    font-size: 18px;
+}
+
+.social_media{
+    width: 25px;
+}
+
+/*Index Style*/
+.title_marauders{
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 60px;
+    color: white;
+}
+
+.goal_txt{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: justify;
+}
+
+#pfp {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add smooth transitions for opacity and transform */
+}
+
+.hovered {
+    opacity: 0; /* Make the image transparent on hover */
+    transform: scale(1); /* Slightly scale up the image on hover */
+}
+
+
+/*About Style*/
+.about_title{
+    font-family: 'VT323', monospace;
+    font-size: 60px;
+    color: white;
+}
+
+.about_title2{
+    font-family: 'VT323', monospace;
+    font-size: 60px;
+    color: #008000;
+}
+
+.about_title3{
+    font-family: 'VT323', monospace;
+    font-size: 60px;
+    color: #FFD700;
+}
+
+.about_text{
+    color: #D1CDCD;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+
+
+
+/* Mobile Breakpoint */
+@media (min-width: 576px) {
+
+    /*Index Style*/
+    .img{
+        width: 50%;
+    }
+
+    .title_marauders{
+        font-family: 'Press Start 2P', sans-serif;
+        font-size: 30PX;
+        color: white;
+    }
+
+    .goal_txt{
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+
+}
+
+/* Tablet Breakpoint */
+@media (min-width: 768px) {
+
+    /*Index Style*/
+    .img{
+        width: 65%;
+    }
+
+    .title_marauders{
+        font-family: 'Press Start 2P', sans-serif;
+        font-size: 32PX;
+        color: white;
+    }
+
+    .goal_txt{
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        font-size: 18px;
+        text-align: justify;
+    }
+}
+
+/* Desktop Breakpoint */
+@media (min-width: 992px) { 
+
+    /*Index Style*/
+    .img{
+        width: 60%;
+    }
+
+    .goal_txt{
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        font-size: 25px;
+        text-align: justify;
+    }
+ }
+
+
+ @media (min-width: 1200px) { 
+
+    /*Index Style*/
+    .img {
+        width: 655px;
+        height: 834px;
+    } 
+
+    .goal_txt{
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        font-size: 25px;
+        text-align: justify;
+    }
+ }
+
+ @media (min-width: 2000px) { 
+
+    /*Index Style*/
+    .img {
+        width: 30%;
+    } 
+
+    .title_marauders{
+        font-family: 'Press Start 2P', sans-serif;
+        font-size: 40PX;
+        color: white;
+    }
+
+    .goal_txt{
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        font-size: 36px;
+        text-align: justify;
+    }
+ }
